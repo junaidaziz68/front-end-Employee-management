@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>EmployeeManagementSystem</title>
 </head>
 <body>
 <h2>Employee Management System</h2> 
-<div class="header">
-  <a href="./create.html">Create</a>
-  <a href="">Update</a>
-  <a href="">Delete</a>
-</div>
+<nav>
+  <a id="toggle">MENU</a>
+  <a class="nav-link " href="./index.html">HOME</a>
+  <a class="nav-link" href="./create.html">CREATE</a>
+  <a class="nav-link" href="./update.html">UPDATE</a>
+  <a class="nav-link" href="./delete.html">DELETE</a>
+</nav>
+
 
 <h2>Status: <span id="status"></span></h2>
 
@@ -25,14 +29,14 @@
   <div id="app">
 
 </div>
-
-
-
 <script src="/app1.js"></script>
 <script src="./status-handler.js"></script>
 <script src="./error-handler.js"></script>
 <script src="./user.js"></script>
 <script src="./create.js"></script>
+<script src="./update.js"></script>
+<script src="./delete.js"></script>
+
 
 
 

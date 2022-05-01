@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Employees</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <a id="toggle">MENU</a>
+        <a class="nav-link " href="../index.html">HOME</a>
+        <a class="nav-link" href="./create.html">CREATE</a>
+        <a class="nav-link" href="./update.html">UPDATE</a>
+        <a class="nav-link" href="./delete.html">DELETE</a>
+    </nav>  
+    
+    <header>
+        <h1>Employee Accounts</h1>
+        <p>Update Employee Accounts</p>
+    </header>
+
+    <div class="container">
+        <section id="banner">
+            <h2>Status: <span id="status"></span></h2>
+        </section>
+        <div id="data-table">
+
+        </div>
+        <main class="container">
+            <form id="data-form" class="container">
+                <fieldset id="user-id-field">
+                    <legend>Employee id</legend>
+                    <label for="id">ID:</label>
+                    <input type="number" name="id" id="id">
+                </fieldset>
+
+
+                <fieldset id="general-info">
+                    <legend>Employee information</legend>
+
+                    <label for="firstName">firstName:</label>
+                    <input type="text" id="firstName" name="firstName"><br>
+
+                    <label for="lastName">lastName</label>
+                    <input type="text" id="lastName" name="lastName"><br>
+
+                    <label for="email">email:</label>
+                    <input type="text" id="email" name="email" required><br>
+                </fieldset>
+            <button type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+    <script src="./scripts/error-handler.js"></script>
+    <script src="./scripts/status-handler.js"></script>
+    <script src="./user.js"></script>
+    <script src="./update.js"></script>
+</body>
+</html>
