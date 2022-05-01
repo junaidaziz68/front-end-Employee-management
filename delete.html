@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Employee</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a id="toggle">MENU</a>
+        <a class="nav-link " href="../index.html">HOME</a>
+        <a class="nav-link" href="./create.html">CREATE</a>
+        <a class="nav-link" href="./update.html">UPDATE</a>
+        <a class="nav-link" href="#">DELETE</a>
+    </nav>
+
+    <header>
+        <h1>Delete Employees</h1>
+        <p>Delete Employees by their id</p>
+    </header>
+
+    <div class="container">
+        <section id="banner">
+            <h2>Status: <span id="status"></span></h2>
+        </section>
+        <main class="container">
+            <form id="data-form">
+                <fieldset id="Employee-id-field">
+                    <legend>Employee id</legend>
+                    <label for="id">ID:</label>
+                    <input type="number" name="id" id="id">
+                </fieldset>
+
+                <button type="submit">Delete</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="./error-handler.js"></script>
+    <script src="./status-handler.js"></script>
+    <script src="./delete.js"></script>
+</body>
+</html>
