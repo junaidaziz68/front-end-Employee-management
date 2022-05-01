@@ -1,0 +1,33 @@
+</div>
+<h2>Create a user:</h2>
+<!-- declare a form with form element -->
+<form id="data-form" class="container">
+    <!-- a fieldset is a group of related form inputs within a form (not mandatory, but helpful for accessibility) -->
+    <fieldset id="general-info">
+  
+        <label for="firstName">firstName:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+
+        <label for="lastName">lastName:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" required><br>
+    </fieldset>
+
+    
+
+    <button type="submit">Submit</button>
+</form>
+<h2>Status: <span id="status"></span></h2>
+<a class="nav-link " href="../index.html">HOME</a>
+
+<div id="data-table">
+</div>  
+
+</main>
+</div>
+<script src="./status-handler.js"></script>
+<script src="./error-handler.js"></script>
+<script src="./user.js"></script>
+<script src="./create.js"></script>
